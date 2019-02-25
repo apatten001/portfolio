@@ -1,1 +1,2 @@
-web: gunicorn arnolds-portfolio.wsgi
+web: gunicorn portfolio.wsgi
+
