@@ -3,5 +3,6 @@
 *.png
 *.jpg
 *.idea
+*venv
 
 
