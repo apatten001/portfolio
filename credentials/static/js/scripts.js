@@ -21,8 +21,11 @@ $('.footer').hide()
         )
     });
 
-$( document ).hover(function() {
-  $( ".social-icon" ).toggle( "bounce", { times: 3 }, "slow" );
-});
+$(document).ready(function() {
+    $('.header').animate({left: 0}, {duration:2000})
+
+    }
+)
+
 
 }); // JQuery end

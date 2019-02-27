@@ -15,6 +15,8 @@ class AboutMe(models.Model):
     number = models.CharField(max_length=20)
     email = models.EmailField()
     image = models.ImageField(upload_to='credentials/static/img')
+    resume = models.FileField(default='Arnold_Resume.pdf')
+
 
     class Meta:
 
