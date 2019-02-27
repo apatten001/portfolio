@@ -10,6 +10,8 @@ jQuery(function ($) {
         $('#preloader').delay(200).fadeOut('slow');
     }());
 
+$('.footer').hide()
+
 
  $(document).ready(function() {
       $('.progress .progress-bar').css("width",
@@ -18,7 +20,9 @@ jQuery(function ($) {
                 }
         )
     });
-      $("h1").click(function(){
-    $("#icon").animate({left: '250px'});
-  });
+
+$( document ).hover(function() {
+  $( ".social-icon" ).toggle( "bounce", { times: 3 }, "slow" );
+});
+
 }); // JQuery end
