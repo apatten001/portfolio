@@ -87,6 +87,7 @@ class Project(models.Model):
     title = models.CharField(max_length=250)
     link = models.CharField(max_length=250)
     image = models.ImageField(upload_to='credentials/static/img')
+    source_code = models.CharField(max_length=250, default='https://github.com/apatten001')
 
     def __str__(self):
         return self.title
