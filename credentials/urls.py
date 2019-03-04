@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import home
+from .views import UnderConstruction
 
 urlpatterns = [
-    path('', home, name='home')
+    path('', UnderConstruction.as_view(), name='home')
 ]

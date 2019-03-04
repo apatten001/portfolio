@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 from django.contrib import messages
 from .models import AboutMe, Education, Skill, Project, SocialMedia, Interest
 from recruiters.forms import RecruiterContactForm
@@ -52,4 +52,9 @@ def home(request):
                    'project': project, 'socials': socials, 'interest':interest,
                    'object_list': object_list, 'description': description}
         return render(request, 'credentials/index.html', context)
+
+
+class UnderConstruction(TemplateView):
+
+    template_name = 'credentials/construction.html'
 
